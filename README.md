@@ -35,8 +35,8 @@ google_stockdata_time_series_analysis/
 
 ## 📋 Requirements
 
-- Python 3.8+
-- TensorFlow/Keras
+- Python 3.9-3.14
+- PyTorch (for LSTM)
 - scikit-learn
 - pandas
 - numpy
@@ -74,7 +74,8 @@ py -m pipenv shell
 
 If you prefer pip, install the required packages:
 ```bash
-pip install pandas numpy matplotlib scikit-learn tensorflow statsmodels prophet
+pip install pandas numpy matplotlib scikit-learn statsmodels prophet
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
 
 ## 💻 Usage
@@ -138,10 +139,9 @@ If you encounter issues with specific packages:
 # Using pipenv
 py -m pipenv install ipykernel
 py -m pipenv install pandas
-py -m pipenv install tensorflow
 
 # Using pip
-pip install --upgrade tensorflow
+pip install --upgrade torch
 pip install --upgrade prophet
 ```
 
@@ -160,11 +160,12 @@ pipenv --rm
 pipenv install
 ```
 
-### TensorFlow/Keras Issues
+### PyTorch Issues
 
-If you encounter TensorFlow warnings or errors:
-- Ensure you have Python 3.8-3.11 (TensorFlow compatibility)
-- Update to the latest TensorFlow: `pip install --upgrade tensorflow`
+If you encounter PyTorch installation issues:
+- Ensure you have Python 3.9-3.14 (PyTorch compatibility)
+- For GPU support, visit [PyTorch installation guide](https://pytorch.org/get-started/locally/)
+- Update to the latest PyTorch: `pip install --upgrade torch`
 
 ## ⚠️ Disclaimer
 
@@ -185,7 +186,7 @@ This project is open source and available under the MIT License.
 
 ## 🙏 Acknowledgments
 
-- TensorFlow/Keras for LSTM implementation
+- PyTorch team for the deep learning framework
 - Statsmodels for ARIMA
 - Facebook's Prophet team for the Prophet library
 - scikit-learn for preprocessing and metrics
