@@ -1,4 +1,4 @@
-# Google Stock Price Time Series Analysis
+# Time Series Analysis
 
 A comprehensive time series forecasting project that predicts Google stock prices using three different approaches: LSTM (Deep Learning), ARIMA (Statistical), and Prophet (Facebook's forecasting tool).
 
