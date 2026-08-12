@@ -2,7 +2,7 @@
 
 A comprehensive time series forecasting project that predicts Google stock prices using three different approaches: LSTM (Deep Learning), ARIMA (Statistical), and Prophet (Facebook's forecasting tool).
 
-## 📊 Project Overview
+## Project Overview
 
 This project demonstrates multiple time series forecasting techniques to predict stock prices:
 
@@ -10,7 +10,7 @@ This project demonstrates multiple time series forecasting techniques to predict
 - **ARIMA (AutoRegressive Integrated Moving Average)**: Classical statistical method
 - **Prophet**: Facebook's robust forecasting tool designed for business time series
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 google_stockdata_time_series_analysis/
@@ -25,7 +25,7 @@ google_stockdata_time_series_analysis/
 └── README.md                          # Project documentation
 ```
 
-## 🚀 Features
+## Features
 
 - **Three ML/Statistical Models**: Compare LSTM, ARIMA, and Prophet models
 - **Performance Metrics**: RMSE and MAE evaluation for each model
@@ -33,7 +33,7 @@ google_stockdata_time_series_analysis/
 - **30-Day Forecast**: Future stock price predictions
 - **Well-Documented Notebook**: Step-by-step explanations with markdown cells
 
-## 📋 Requirements
+## Requirements
 
 - Python 3.9-3.14
 - PyTorch (for LSTM)
@@ -44,7 +44,7 @@ google_stockdata_time_series_analysis/
 - statsmodels
 - prophet
 
-## 🔧 Installation
+## Installation
 
 ### 1. Clone the Repository
 
@@ -78,7 +78,7 @@ pip install pandas numpy matplotlib scikit-learn statsmodels prophet
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
 
-## 💻 Usage
+##  Usage
 
 ### Running the Jupyter Notebook (Recommended)
 
@@ -95,7 +95,7 @@ jupyter notebook
 python main.py
 ```
 
-## 📈 Model Performance
+##  Model Performance
 
 The notebook compares three models using:
 - **RMSE (Root Mean Square Error)**: Measures prediction accuracy
@@ -103,21 +103,21 @@ The notebook compares three models using:
 
 Results are displayed in a comparison table to identify the best-performing model.
 
-## 📊 Output
+##  Output
 
 The analysis generates:
 - `forecasting_results.png`: Comparison of all three models' predictions
 - `future_forecast.png`: 30-day future stock price forecast
 - Console output with detailed metrics and predictions
 
-## 🧪 Data
+## Data
 
 The project uses historical Google stock data with the following columns:
 - `date`: Trading date
 - `close`: Closing price
 - Other OHLC (Open, High, Low, Close) data
 
-## 📝 Notebook Structure
+## Notebook Structure
 
 1. **Introduction**: Project overview and objectives
 2. **Data Loading**: Import and prepare the dataset
@@ -129,7 +129,7 @@ The project uses historical Google stock data with the following columns:
 8. **Future Forecast**: 30-day prediction with LSTM
 9. **Conclusion**: Summary and insights
 
-## 🛠️ Troubleshooting
+##  Troubleshooting
 
 ### Python Package Issues
 
@@ -167,24 +167,6 @@ If you encounter PyTorch installation issues:
 - For GPU support, visit [PyTorch installation guide](https://pytorch.org/get-started/locally/)
 - Update to the latest PyTorch: `pip install --upgrade torch`
 
-## ⚠️ Disclaimer
-
-This project is for **educational and research purposes only**. Stock price predictions should not be used for actual trading decisions. Past performance does not guarantee future results.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 👤 Author
-
-**Wibnu Dixon**
-- GitHub: [@wibnudixon](https://github.com/wibnudixon)
-
-## 🙏 Acknowledgments
 
 - PyTorch team for the deep learning framework
 - Statsmodels for ARIMA
